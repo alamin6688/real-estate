@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import { useContext } from "react";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 const Register = () => {
+
+  const { createUser } = useContext(AuthContext);
+
   const handleRegister = (e) => {
     e.preventDefault();
     console.log(e.currentTarget);
@@ -85,11 +90,6 @@ const Register = () => {
                   className="input input-bordered border-none bg-gray-200"
                   required
                 />
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
               </div>
               <div className="form-control mt-6">
                 <button className="btn bg-blue-600 hover:bg-blue-700 text-white border-none font-bold text-xl">
