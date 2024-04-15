@@ -1,5 +1,5 @@
 import { FaDollarSign } from "react-icons/fa";
-import { IoLocationSharp, IoPricetags } from "react-icons/io5";
+import { IoLocationSharp } from "react-icons/io5";
 import { TbProgressAlert } from "react-icons/tb";
 
 const Card = ({ Acard }) => {
@@ -15,7 +15,7 @@ const Card = ({ Acard }) => {
         />
       </figure>
       <div className="card-body items-start text-center pt-0">
-        <h2 className="card-title text-2xl">{estate_title}</h2>
+        <h2 className="card-title text-2xl text-start">{estate_title}</h2>
         <div>
         <p className="text-start font-bold text-xl">Facilities:</p>
         <ul className="text-start pl-5 space-y-2">
