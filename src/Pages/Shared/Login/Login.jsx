@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import { useContext } from "react";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 const Login = () => {
-  // const { signIn } = useContext(AuthContext);
+  const { signIn } = useContext(AuthContext);
   // const location = useLocation();
   // const navigate = useNavigate();
   // console.log('Location in the login page', location);
@@ -16,16 +18,16 @@ const Login = () => {
     const email = form.get("email");
     const password = form.get("password");
     console.log(email, password);
-    // signIn(email, password)
-    // .then(result => {
-    //   console.log(result.user)
+    signIn(email, password)
+    .then(result => {
+      console.log(result.user)
 
-    //   // Navigate after login
-    //   navigate(location?.state ? location.state  : '/');
+    // Navigate after login
+    // navigate(location?.state ? location.state  : '/');
     // })
     // .catch(error => {
     //   console.error(error)
-    // })
+    })
   };
 
   return (
