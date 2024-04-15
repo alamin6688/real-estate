@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 w-[98%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,21 +34,22 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-gray-200 rounded-box w-52"
             >
               {navLinks}
             </ul>
-          </div>
-          <a className="btn btn-ghost font-bold text-2xl pl-0 md:pl-2">
-            Unity Estates
-          </a>
+          </div><Link to="/">
+            <button className="btn btn-ghost font-bold text-xl md:text-2xl pl-0 md:pl-2 text-black">
+              Unity Estates
+            </button>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             {navLinks}
           </ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end mr-2">
           <div
             tabIndex={0}
             role="button"
@@ -63,7 +64,7 @@ const Navbar = () => {
           </div>
 
           <div>
-            <Link>
+            <Link to="/login">
               <button className="btn bg-gray-400 ml-2 text-black border-none">Login</button>
             </Link>
           </div>

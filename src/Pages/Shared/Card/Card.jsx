@@ -11,7 +11,7 @@ const Card = ({ Acard }) => {
         <img
           src={image}
           alt="Shoes"
-          className="rounded-xl h-[200px]"
+          className="rounded-2xl h-[200px]"
         />
       </figure>
       <div className="card-body items-start text-center pt-0">
