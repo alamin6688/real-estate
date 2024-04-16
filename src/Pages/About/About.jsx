@@ -24,6 +24,9 @@ const About = () => {
           <div className="card-body">
             <h2 className="card-title">{id}</h2>
             <p>arghahr</p>
+            <p>arghahr</p>
+            <p>arghahr</p>
+            <p>arghahr</p>
             <div className="card-actions justify-end">
               <button className="btn btn-primary">Listen</button>
             </div>

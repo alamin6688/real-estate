@@ -4,8 +4,47 @@ import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { useContext } from "react";
 import { AuthContext } from "../../../Providers/AuthProvider";
+import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../../../Firebase/firebase.config";
 
 const Login = () => {
+  const auth = getAuth(app);
+  console.log(app)
+  const provider = new GoogleAuthProvider();
+  const githubProvider = new GithubAuthProvider();
+
+  // Google Sign In
+  const handleGoogleSignIn = () =>{
+    console.log('Google handle clicked')
+    signInWithPopup(auth, provider)
+    .then(result => {
+      const user = result.user;
+      console.log(user);
+
+      // Navigate after login
+      navigate(location?.state ? location.state  : '/');
+    })
+    .catch(error => {
+      console.error(error.message)
+    })
+  }
+
+  // Github Sign In
+  const handleGithubSignIn = () =>{
+    console.log('Github handle clicked');
+    signInWithPopup(auth, githubProvider)
+    .then(result => {
+      const user = result.user;
+      console.log(user);
+
+      // Navigate after login
+      navigate(location?.state ? location.state  : '/');
+    })
+    .catch(error => {
+      console.error(error.message)
+    })
+  }
+
   const { signIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
@@ -84,7 +123,7 @@ const Login = () => {
               <div>
                 <div className="flex w-full">
                   <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">
-                    <button className="btn border-none outline outline-1 outline-gray-500">
+                    <button onClick={handleGoogleSignIn} className="btn border-none outline outline-1 outline-gray-500">
                       <FaGoogle className="text-xl text-gray-600"/> <span className="text-gray-700">Google</span>
                     </button>
                   </div>
@@ -92,7 +131,7 @@ const Login = () => {
                     <span className="text-xs font-bold">OR</span>
                   </div>
                   <div className="grid h-20 flex-grow card bg-base-300 rounded-box place-items-center">
-                  <button className="btn border-none outline outline-1 outline-gray-500">
+                  <button onClick={handleGithubSignIn} className="btn border-none outline outline-1 outline-gray-500">
                       <FaGithub className="text-xl text-gray-600"/> <span className="text-gray-700">Github</span>
                     </button>
                   </div>
