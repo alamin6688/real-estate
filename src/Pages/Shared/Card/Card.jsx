@@ -19,7 +19,7 @@ const Card = ({ Acard }) => {
         <img
           src={image}
           alt="Shoes"
-          className="rounded-2xl h-[200px]"
+          className="rounded-3xl h-[200px]"
         />
       </figure>
       <div className="card-body items-start text-center pt-0">
@@ -46,7 +46,7 @@ const Card = ({ Acard }) => {
         </div>
         <div className="card-actions">
           <Link to={`/Acard/${id}`}>
-            <button className="btn btn-primary border-none bg-orange-400 text-white">View Property</button>
+            <button className="btn btn-primary border-none hover:bg-orange-600 bg-orange-500 text-white">View Property</button>
           </Link>
         </div>
       </div>

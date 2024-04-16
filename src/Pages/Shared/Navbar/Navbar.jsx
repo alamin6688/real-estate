@@ -18,17 +18,17 @@ const Navbar = () => {
   }
 
   const navLinks = <>
-    <li className=""><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/about">About</NavLink></li>
-    <li className="mr-2"><NavLink to="/login">Login</NavLink></li>
-    <li className="mr-2"><NavLink to="/register">Register</NavLink></li>
-
- 
+    <li className="btn px-0"><NavLink to="/">Home</NavLink></li>
+    <li className="btn px-0"><NavLink to="/about">About</NavLink></li>
+    <li className="btn px-0"><NavLink to="/userProfile">User Profile</NavLink></li>
+    <li className="btn px-0"><NavLink to="/updateProfile">Update Profile</NavLink></li>
+    <li className="btn px-0"><NavLink to="/login">Login</NavLink></li>
+    <li className="btn px-0"><NavLink to="/register">Register</NavLink></li>
   </>
 
   return (
     <div>
-      <div className="navbar bg-base-100 w-[98%] mx-auto ">
+      <div className="navbar bg-base-100 w-[98%] mx-auto p-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -60,7 +60,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal p-0">
             {navLinks}
           </ul>
         </div>
@@ -81,12 +81,12 @@ const Navbar = () => {
           <div>
           {
                     user ? 
-                    <button onClick={handleSignOut} className="btn bg-blue-500 hover:bg-blue-700 text-white border-none font-bold ml-2">
+                    <button onClick={handleSignOut} className="btn btn-primary border-none hover:bg-orange-600 bg-orange-500 text-white ml-2">
                         Log Out
                     </button>
                     :
                     <Link to="/login">
-                        <button className="btn bg-blue-500 hover:bg-blue-700 text-white border-none font-bold ml-2">
+                        <button className="btn btn-primary border-none hover:bg-orange-600 bg-orange-500 text-white ml-2">
                           Login
                         </button>
                     </Link>

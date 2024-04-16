@@ -6,6 +6,8 @@ import Register from "../Pages/Shared/Register/Register";
 import About from "../Pages/About/About";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import UserProfile from "../Pages/UserProfile/UserProfile";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
             {
                 path: '/Acard/:id',
                 element: <PrivateRoute><About></About></PrivateRoute>
+            },
+            {
+                path: '/userProfile',
+                element: <PrivateRoute><UserProfile></UserProfile></PrivateRoute>
+            },
+            {
+                path: '/updateProfile',
+                element: <PrivateRoute><UpdateProfile></UpdateProfile></PrivateRoute>
             },
             {
                 path: '/login',
