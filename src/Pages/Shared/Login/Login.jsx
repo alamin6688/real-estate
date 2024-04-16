@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
@@ -7,9 +7,9 @@ import { AuthContext } from "../../../Providers/AuthProvider";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
-  // const location = useLocation();
-  // const navigate = useNavigate();
-  // console.log('Location in the login page', location);
+  const location = useLocation();
+  const navigate = useNavigate();
+  console.log('Location in the login page', location);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -21,11 +21,12 @@ const Login = () => {
     signIn(email, password)
     .then(result => {
       console.log(result.user)
+      
     // Navigate after login
-    // navigate(location?.state ? location.state  : '/');
-    // })
-    // .catch(error => {
-    //   console.error(error)
+    navigate(location?.state ? location.state  : '/');
+    })
+    .catch(error => {
+      console.error(error)
     })
   };
 

@@ -14,7 +14,7 @@ const About = () => {
         </h2>
       </div>
       <div>
-        <div className="card lg:card-side bg-gray-200 shadow-xl">
+        <div className="card lg:card-side bg-gray-200 shadow-xl animate__animated animate__slideInDown">
           <figure>
             <img
               src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
