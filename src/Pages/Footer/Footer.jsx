@@ -1,4 +1,5 @@
 import { MdRealEstateAgent } from "react-icons/md";
+import 'animate.css';
 
 const Footer = () => {
   return (

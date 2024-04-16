@@ -3,6 +3,8 @@ import Root from "../Layouts/Root";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Shared/Login/Login";
 import Register from "../Pages/Shared/Register/Register";
+import About from "../Pages/About/About";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -12,7 +14,15 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
-                loader: () => fetch('card.json')
+                loader: () => fetch('/card.json')
+            },
+            {
+                path: '/about',
+                element: <PrivateRoute><About></About></PrivateRoute>
+            },
+            {
+                path: '/Acard/:id',
+                element: <PrivateRoute><About></About></PrivateRoute>
             },
             {
                 path: '/login',

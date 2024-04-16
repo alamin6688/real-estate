@@ -1,9 +1,10 @@
 import { FaDollarSign } from "react-icons/fa";
 import { IoLocationSharp } from "react-icons/io5";
 import { TbProgressAlert } from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const Card = ({ Acard }) => {
-  const { estate_title, price,location, image,status, facilities } = Acard;
+  const { id, estate_title, price,location, image,status, facilities } = Acard;
 
   return (
     <div className="card w-full bg-gray-200 shadow-2xl outline-dashed outline-gray-300 animate__animated animate__zoomIn">
@@ -37,7 +38,9 @@ const Card = ({ Acard }) => {
             <p className="font-bold uppercase">{price}</p>
         </div>
         <div className="card-actions">
-          <button className="btn btn-primary border-none bg-orange-400 text-white">View Property</button>
+          <Link to={`/Acard/${id}`}>
+            <button className="btn btn-primary border-none bg-orange-400 text-white">View Property</button>
+          </Link>
         </div>
       </div>
     </div>
