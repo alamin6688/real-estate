@@ -6,7 +6,7 @@ const Card = ({ Acard }) => {
   const { estate_title, price,location, image,status, facilities } = Acard;
 
   return (
-    <div className="card w-full bg-gray-200 shadow-2xl outline-dashed outline-gray-300">
+    <div className="card w-full bg-gray-200 shadow-2xl outline-dashed outline-gray-300 animate__animated animate__zoomIn">
       <figure className="px-10 pt-10">
         <img
           src={image}

@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <div>
-      <div className="carousel w-full md:h-[550px] rounded-2xl mt-4">
+      <div className="carousel w-full md:h-[550px] rounded-2xl mt-4 animate__animated animate__slideInDown">
         <div id="item1" className="carousel-item w-full">
           <img
             src="https://i.postimg.cc/0jxxNbLh/outsite-co-R-LK3sq-Li-Bw-unsplash.jpg"
@@ -27,7 +27,7 @@ const Banner = () => {
           />
         </div>
       </div>
-      <div className="flex justify-center w-full py-2 gap-2">
+      <div className="flex justify-center w-full py-2 gap-2 animate__animated animate__slideInDown">
         <a href="#item1" className="btn btn-xs">
           1
         </a>

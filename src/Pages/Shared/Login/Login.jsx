@@ -21,7 +21,6 @@ const Login = () => {
     signIn(email, password)
     .then(result => {
       console.log(result.user)
-
     // Navigate after login
     // navigate(location?.state ? location.state  : '/');
     // })
@@ -34,7 +33,7 @@ const Login = () => {
     <div>
       <Navbar></Navbar>
       <div
-        className="hero py-20 bg-gray-200 mt-7 rounded-3xl shadow-2xl"
+        className="hero py-20 bg-gray-200 mt-7 rounded-3xl shadow-2xl animate__animated animate__zoomIn"
         style={{
           backgroundImage:
             "url(https://i.postimg.cc/tCZMYmNk/bailey-anselme-Bkp3g-Lygye-A-unsplash.jpg)",
