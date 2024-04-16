@@ -1,11 +1,18 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../../Providers/AuthProvider";
+import { IoEye } from "react-icons/io5";
+import { IoEyeOff } from "react-icons/io5";
 
 const Register = () => {
 
+  const [ registerError , setRegisterError ] = useState('');
+  const [ success , setSuccess ] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const { createUser } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -17,14 +24,44 @@ const Register = () => {
     const password = form.get("password");
     console.log(name, photo, email, password);
 
-    //create user:
+    // reset Error
+    setRegisterError('')
+
+    // reset success
+    setSuccess('');
+
+    if(password.length < 6){
+      setRegisterError('Password should be at least 6 characters or longer.');
+      return;
+    }
+    else if(!/[A-Z]/.test(password)){
+      setRegisterError('Your password should have at least one uppercase characters!');
+      return;
+    }
+    else if (!/[a-z]/.test(password)) {
+      setRegisterError('Your password should have at least one lowercase character!');
+      return;
+    }
+    else if (!/\d/.test(password)) {
+      setRegisterError('Your password should have at least one digit!');
+      return;
+    }
+
+
+    // create user:
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
+        setSuccess('User created Successfully!');
+        
+        // navigate after register to login page
+        navigate(location?.state ? location.state  : '/login');
       })
       .catch((error) => {
         console.error(error);
+        setRegisterError(error.message);
       });
+ 
   };
 
   return (
@@ -83,13 +120,21 @@ const Register = () => {
                 <label className="label">
                   <span className="label-text font-bold">Password</span>
                 </label>
-                <input
-                  type="password"
+              <div className="relative">
+              <input
+                  type={ showPassword ? "text" : "password"}
                   name="password"
                   placeholder="Enter your password"
-                  className="input input-bordered border-none bg-gray-200"
-                  required
-                />
+                  className="input input-bordered border-none bg-gray-200 w-[90%]"
+                  required />
+                <span 
+                className="absolute top-4 right-3" 
+                onClick={()=> setShowPassword(!showPassword)}>
+                  {
+                    showPassword ? <IoEyeOff className="text-xl"/> : <IoEye className="text-xl"/>
+                  }
+                </span>
+              </div>
               </div>
               <div className="form-control mt-6">
                 <button className="btn bg-blue-600 hover:bg-blue-700 text-white border-none font-bold text-xl">
@@ -107,6 +152,12 @@ const Register = () => {
                 </p>
               </div>
             </form>
+            {
+              registerError && <p className="text-red-600 text-center text-xs mt-0">{registerError}</p>
+            }
+            {
+              success && <p className="text-green-600 text-center text-xs mt-0">{success}</p>
+            }
           </div>
         </div>
       </div>

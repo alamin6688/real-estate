@@ -2,12 +2,15 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../../Providers/AuthProvider";
 import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../../../Firebase/firebase.config";
+import { IoEye, IoEyeOff } from "react-icons/io5";
+
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
   const auth = getAuth(app);
   console.log(app)
   const provider = new GoogleAuthProvider();
@@ -45,6 +48,7 @@ const Login = () => {
     })
   }
 
+  
   const { signIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
@@ -101,13 +105,21 @@ const Login = () => {
                 <label className="label">
                   <span className="label-text font-bold">Password</span>
                 </label>
-                <input
-                  type="password"
+                <div className="relative">
+              <input
+                  type={ showPassword ? "text" : "password"}
                   name="password"
                   placeholder="Enter your password"
-                  className="input input-bordered border-none bg-gray-200"
-                  required
-                />
+                  className="input input-bordered border-none bg-gray-200 w-[90%]"
+                  required />
+                <span 
+                className="absolute top-4 right-3" 
+                onClick={()=> setShowPassword(!showPassword)}>
+                  {
+                    showPassword ? <IoEyeOff className="text-xl"/> : <IoEye className="text-xl"/>
+                  }
+                </span>
+              </div>
                 <label className="label">
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
