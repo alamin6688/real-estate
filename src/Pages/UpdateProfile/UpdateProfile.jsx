@@ -19,12 +19,12 @@ const UpdateProfile = () => {
     });
   };
   return (
-    <div>
+    <div className="animate__animated animate__zoomIn">
       <Helmet>
         <title>Unity Estates | Update Profile</title>
       </Helmet>
       <div className="bg-gray-200 mt-6 p-5 md:p-10 rounded-xl shadow-2xl">
-        <h2 className="text-3xl text-center">Update Profile</h2>
+        <h2 className="text-3xl text-center">Update Profile:</h2>
         <div className="flex flex-col w-3/4 mx-auto justify-center">
           <div className="flex  flex-col lg:flex-row items-center">
             <div className="text-lg font-bold">Name: &nbsp;</div>
@@ -68,7 +68,7 @@ const UpdateProfile = () => {
               />
             </div>
             <div className="form-control w-3/4 mt-10">
-              <button className="btn btn-ghost hover:bg-blue-600 bg-blue-500 text-white">
+                <button className="btn btn-ghost hover:bg-blue-600 bg-blue-500 text-xl text-white rounded-xl w-full">
                 Update
               </button>
             </div>

@@ -15,7 +15,7 @@ const Card = ({ Acard }) => {
   },[])
 
   return (
-    <div className="card w-full bg-gray-200 shadow-2xl outline-dashed outline-gray-300" data-aos="zoom-in">
+    <div className="card w-full bg-gray-200 rounded-3xl shadow-2xl" data-aos="zoom-in">
       <figure className="px-10 pt-10">
         <img
           src={image}

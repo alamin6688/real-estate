@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <div className="flex items-center justify-center relative">
       <div>
-        <div className="carousel w-full md:h-[550px] rounded-2xl mt-4 animate__animated animate__slideInDown">
+        <div className="carousel w-full md:h-[550px] rounded-2xl mt-4 animate__animated animate__slideInDown shadow-xl">
           <div id="item1" className="carousel-item w-full">
             <img
               src="https://i.postimg.cc/0jxxNbLh/outsite-co-R-LK3sq-Li-Bw-unsplash.jpg"
@@ -29,16 +29,16 @@ const Banner = () => {
           </div>
         </div>
         <div className="flex justify-center w-full py-2 gap-2 animate__animated animate__slideInDown">
-          <a href="#item1" className="btn btn-xs">
+          <a href="#item1" className="btn btn-xs bg-gray-200 hover:bg-gray-300">
             1
           </a>
-          <a href="#item2" className="btn btn-xs">
+          <a href="#item2" className="btn btn-xs bg-gray-200 hover:bg-gray-300">
             2
           </a>
-          <a href="#item3" className="btn btn-xs">
+          <a href="#item3" className="btn btn-xs bg-gray-200 hover:bg-gray-300">
             3
           </a>
-          <a href="#item4" className="btn btn-xs">
+          <a href="#item4" className="btn btn-xs bg-gray-200 hover:bg-gray-300">
             4
           </a>
         </div>

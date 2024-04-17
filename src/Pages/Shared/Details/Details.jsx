@@ -14,8 +14,8 @@ const Details = () => {
       <Helmet>
         <title>Unity Estates | Details - {id}</title>
       </Helmet>
-      <h1 className="text-center text-4xl">Estate Details</h1>
-      <div className=" bg-gray-200 rounded-xl shadow-2xl flex flex-col lg:flex-row items-center justify-center p-5 md:p-10">
+      <h1 className="text-center text-4xl mt-10 mb-10 mx-auto pt-10 pb-10 bg-gray-200 rounded-2xl shadow-2xl animate__animated animate__zoomIn">Estate Details</h1>
+      <div className=" bg-gray-200 rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center justify-center p-5 md:p-10 animate__animated animate__zoomIn">
         {/*image */}
         <figure className=" flex-1">
           <img src={estate.image} className="rounded-xl w-full" />
@@ -27,8 +27,8 @@ const Details = () => {
          flex-1"
         >
           <div className="space-y-3">
-            <h2 className=" text-3xl text-start">{estate.segment_name}</h2>
-            <h2 className=" text-xl text-start">{estate.estate_title}</h2>
+            <h2 className=" text-3xl text-start">{estate.estate_title}</h2>
+            <h2 className=" text-xl text-start">{estate.segment_name}</h2>
             <p className=" text-lg text-start">{estate.description}</p>
           </div>
           <div className="space-y-2">
