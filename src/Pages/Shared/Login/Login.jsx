@@ -1,12 +1,14 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Navbar from "../Navbar/Navbar";
 import { FaGoogle } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../../Providers/AuthProvider";
 import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import app from "../../../Firebase/firebase.config";
 import { IoEye, IoEyeOff } from "react-icons/io5";
+import { Helmet } from "react-helmet";
 
 
 const Login = () => {
@@ -24,8 +26,11 @@ const Login = () => {
       const user = result.user;
       console.log(user);
 
-      // Navigate after login
-      navigate(location?.state ? location.state  : '/');
+      toast.success('Login successful!', { autoClose: 1800 });
+      setTimeout(() => {
+          // Navigate after a delay of 1900ms (adjust the delay time as needed)
+          navigate(location?.state ? location.state : '/');
+      }, 1900);
     })
     .catch(error => {
       console.error(error.message)
@@ -39,9 +44,11 @@ const Login = () => {
     .then(result => {
       const user = result.user;
       console.log(user);
-
-      // Navigate after login
-      navigate(location?.state ? location.state  : '/');
+      toast.success('Login successful!', { autoClose: 1800 });
+      setTimeout(() => {
+          // Navigate after a delay of 1900ms (adjust the delay time as needed)
+          navigate(location?.state ? location.state : '/');
+      }, 1900);
     })
     .catch(error => {
       console.error(error.message)
@@ -61,7 +68,7 @@ const Login = () => {
     const email = form.get("email");
     const password = form.get("password");
     console.log(email, password);
-    signIn(email, password)
+    signIn(email,password)
     .then(result => {
       console.log(result.user)
       
@@ -75,7 +82,9 @@ const Login = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
+       <Helmet>
+        <title>Unity Estates | Login</title>
+      </Helmet>
       <div
         className="hero py-20 bg-gray-200 mt-7 rounded-3xl shadow-2xl animate__animated animate__zoomIn"
         style={{
@@ -163,6 +172,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <ToastContainer></ToastContainer>
     </div>
   );
 };

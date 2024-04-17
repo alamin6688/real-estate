@@ -8,6 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import UserProfile from "../Pages/UserProfile/UserProfile";
+import Details from "../Pages/Shared/Details/Details";
 
 const router = createBrowserRouter([
     {
@@ -25,8 +26,9 @@ const router = createBrowserRouter([
                 element: <PrivateRoute><About></About></PrivateRoute>
             },
             {
-                path: '/Acard/:id',
-                element: <PrivateRoute><About></About></PrivateRoute>
+                path: '/details/:id',
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
+                loader: () => fetch('/card.json')
             },
             {
                 path: '/userProfile',

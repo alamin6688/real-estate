@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import { useEffect } from "react";
+import PropTypes from 'prop-types';
 
 const Card = ({ Acard }) => {
   const { id, estate_title, price,location, image,status, facilities } = Acard;
@@ -45,7 +46,7 @@ const Card = ({ Acard }) => {
             <p className="font-bold uppercase">{price}</p>
         </div>
         <div className="card-actions">
-          <Link to={`/Acard/${id}`}>
+          <Link to={`/details/${id}`}>
             <button className="btn btn-primary border-none hover:bg-orange-600 bg-orange-500 text-white">View Property</button>
           </Link>
         </div>
@@ -55,3 +56,15 @@ const Card = ({ Acard }) => {
 };
 
 export default Card;
+Card.propTypes = {
+  Acard: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    estate_title: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+    facilities: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+};
+

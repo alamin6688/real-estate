@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../Providers/AuthProvider";
 
@@ -20,18 +20,16 @@ const Navbar = () => {
   const navLinks = <>
     <NavLink className="btn px-3 text-orange-600" to="/">Home</NavLink>
     <NavLink className="btn px-3" to="/about">About</NavLink>
-    <NavLink className="btn px-3" to="/userProfile">User Profile</NavLink>
     <NavLink className="btn px-3" to="/updateProfile">Update Profile</NavLink>
-    <NavLink className="btn px-3" to="/login">Login</NavLink>
-    <NavLink className="btn px-3" to="/register">Register</NavLink>
+    <NavLink className="btn px-3" to="/userProfile">User Profile</NavLink>
   </>
 
   return (
     <div>
       <div className="navbar bg-base-100 w-[98%] mx-auto p-0">
-        <div className="navbar-start">
+        <div className="navbar-start ">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden p-0 mr-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -54,7 +52,7 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div><Link to="/">
-            <button className="btn btn-ghost font-bold text-xl md:text-2xl pl-0 md:pl-2 text-black">
+            <button className="btn btn-ghost font-bold text-xl md:text-2xl pl-0 md:pl-2 text-black ">
               Unity Estates
             </button>
           </Link>
@@ -71,10 +69,12 @@ const Navbar = () => {
             className="btn btn-ghost btn-circle avatar"
           >
             <div className="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-              />
+           {
+            user? 
+            <img src={user.photoURL}  title={user.displayName}/>
+            :
+            ''
+           }
             </div>
           </div>
 

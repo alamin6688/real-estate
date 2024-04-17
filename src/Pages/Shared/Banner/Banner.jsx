@@ -43,7 +43,7 @@ const Banner = () => {
           </a>
         </div>
       </div>
-      <div className="absolute bg-gray-200 text-center w-3/4 md:w-[60%] rounded-2xl shadow-2xl animate__animated animate__fadeInUp">
+      <div className="absolute bg-gray-200 bg-opacity-80 text-center w-3/4 md:w-[60%] rounded-2xl shadow-2xl animate__animated animate__fadeInUp">
           <h2 className="text-xl md:text-3xl text-orange-500 mb-0">
             Welcome to Unity Estates!
           </h2>

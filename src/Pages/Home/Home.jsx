@@ -1,12 +1,14 @@
+import { Helmet } from "react-helmet";
 import Banner from "../Shared/Banner/Banner";
 import Cards from "../Shared/Cards/Cards";
-import Navbar from "../Shared/Navbar/Navbar";
 
 
 const Home = () => {
   return (
     <div>
-        <Navbar></Navbar>
+      <Helmet>
+        <title>Unity Estates | Home</title>
+      </Helmet>
         <Banner></Banner>
         <Cards></Cards>
     </div>
