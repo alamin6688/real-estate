@@ -4,6 +4,8 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../../Providers/AuthProvider";
 import { IoEye } from "react-icons/io5";
 import { IoEyeOff } from "react-icons/io5";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
@@ -55,7 +57,7 @@ const Register = () => {
         setSuccess('User created Successfully!');
         
         // navigate after register to login page
-        navigate(location?.state ? location.state  : '/login');
+        navigate(location?.state ? location.state  : '/');
       })
       .catch((error) => {
         console.error(error);
@@ -63,6 +65,8 @@ const Register = () => {
       });
  
   };
+
+  const notify = () => toast("Successfully Registered!");
 
   return (
     <div>
@@ -137,7 +141,7 @@ const Register = () => {
               </div>
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-blue-600 hover:bg-blue-700 text-white border-none font-bold text-xl">
+                <button onClick={notify} className="btn bg-blue-600 hover:bg-blue-700 text-white border-none font-bold text-xl">
                   Register
                 </button>
               </div>
@@ -161,6 +165,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

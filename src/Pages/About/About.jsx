@@ -10,7 +10,7 @@ const About = () => {
       <Navbar></Navbar>
       <div className="w-[98%] mx-auto px-0 md:px-0">
         <h2 className="text-center mt-10 mb-10 mx-auto pt-10 pb-10 bg-gray-200 rounded-2xl outline-dashed outline-gray-300 animate__animated animate__zoomIn">
-          Estates Details
+          Residential Estates Details
         </h2>
       </div>
       <div>

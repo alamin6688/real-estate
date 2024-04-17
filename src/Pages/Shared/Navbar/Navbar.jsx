@@ -18,12 +18,12 @@ const Navbar = () => {
   }
 
   const navLinks = <>
-    <li className="btn px-0"><NavLink to="/">Home</NavLink></li>
-    <li className="btn px-0"><NavLink to="/about">About</NavLink></li>
-    <li className="btn px-0"><NavLink to="/userProfile">User Profile</NavLink></li>
-    <li className="btn px-0"><NavLink to="/updateProfile">Update Profile</NavLink></li>
-    <li className="btn px-0"><NavLink to="/login">Login</NavLink></li>
-    <li className="btn px-0"><NavLink to="/register">Register</NavLink></li>
+    <NavLink className="btn px-3 text-orange-600" to="/">Home</NavLink>
+    <NavLink className="btn px-3" to="/about">About</NavLink>
+    <NavLink className="btn px-3" to="/userProfile">User Profile</NavLink>
+    <NavLink className="btn px-3" to="/updateProfile">Update Profile</NavLink>
+    <NavLink className="btn px-3" to="/login">Login</NavLink>
+    <NavLink className="btn px-3" to="/register">Register</NavLink>
   </>
 
   return (
