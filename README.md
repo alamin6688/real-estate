@@ -12,9 +12,9 @@
 
 <h2><strong>## NPM Package Used:
 </strong></h2>
-<p><strong>🔸aos</strong></p>
-<p><strong>🔸animate.css</strong></p>
-<p><strong>🔸swipe slider</strong></p>
+<p><strong>🔸React Icon</strong></p>
+<p><strong>🔸React Toastify</strong></p>
+<p><strong>🔸React Proptypes</strong></p>
 
 <h2><strong>## Animation Used:
 </strong></h2>
