@@ -36,7 +36,9 @@ const UpdateProfile = () => {
           <div className="flex  flex-col lg:flex-row items-center">
             <div className="text-lg font-bold">Photo URL: &nbsp;</div>
             <div>
-              <h1 className="text-lg "> {user.photoURL}</h1>
+              <h1 className="text-lg "> 
+              <span className="text-xs md:text-xs">{user.photoURL}</span>
+              </h1>
             </div>
           </div>
         </div>
