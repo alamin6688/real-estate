@@ -35,15 +35,15 @@ const Card = ({ Acard }) => {
         </div>
         <div className="flex justify-center items-center space-x-2 pt-0">
             <IoLocationSharp className="text-orange-400"></IoLocationSharp>
-            <p className="font-bold uppercase">{location}</p>
+            <p className="font-bold">{location}</p>
         </div>
         <div className="flex justify-center items-center space-x-2 pt-0">
         <TbProgressAlert className="text-orange-400"/>
-            <p className="font-bold uppercase">{status}</p>
+            <p className="font-bold">{status}</p>
         </div>
         <div className="flex justify-center items-center space-x-2 pt-0">
         <FaDollarSign className="text-orange-400 text-xl"/>
-            <p className="font-bold uppercase">{price}</p>
+            <p className="font-bold">{price}</p>
         </div>
         <div className="card-actions">
           <Link to={`/details/${id}`}>

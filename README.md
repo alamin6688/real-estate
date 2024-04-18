@@ -10,15 +10,13 @@
 <p><strong>🔸Responsive Design:</strong>  Ensure a seamless experience across different devices, including desktops, tablets, and mobile phones.</p>
 <p><strong>🔸User Authentication:</strong>  Allow users to sign up, sign in, and log out securely.</p>
 
-<h2><strong>## NPM Package Used:
+<h2><strong>## NPM Package & Animation Used:
 </strong></h2>
-<p><strong>🔸React Icon</strong></p>
-<p><strong>🔸React Toastify</strong></p>
-<p><strong>🔸React Proptypes</strong></p>
 
-<h2><strong>## Animation Used:
-</strong></h2>
 <p><strong>🔸aos</strong></p>
 <p><strong>🔸animate.css</strong></p>
 <p><strong>🔸swipe slider</strong></p>
+<p><strong>🔸React Icon</strong></p>
+<p><strong>🔸React Toastify</strong></p>
+<p><strong>🔸React Proptypes</strong></p>
 

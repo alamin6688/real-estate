@@ -28,7 +28,7 @@ const Login = () => {
 
       toast.success('Login successful!', { autoClose: 1800 });
       setTimeout(() => {
-          // Navigate after a delay of 1900ms (adjust the delay time as needed)
+          // Navigate after a delay of 1800ms 
           navigate(location?.state ? location.state : '/');
       }, 1900);
     })
@@ -44,9 +44,10 @@ const Login = () => {
     .then(result => {
       const user = result.user;
       console.log(user);
+
       toast.success('Login successful!', { autoClose: 1800 });
       setTimeout(() => {
-          // Navigate after a delay of 1900ms (adjust the delay time as needed)
+          // Navigate after a delay of 1800ms 
           navigate(location?.state ? location.state : '/');
       }, 1900);
     })

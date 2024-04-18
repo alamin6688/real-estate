@@ -29,10 +29,10 @@ const About = () => {
             <div className="">
               <h1 className="text-3xl md:text-5xl font-bold">Hello People!</h1>
               <p className="py-6 w-full">
-                Welcome to Unity Estates, where we believe in igniting a passion for finding the perfect home through a carefully curated selection of properties for all needs and preferences. Just as every reader finds their perfect book, we're dedicated to helping every client find their ideal property match.
+                Welcome to Unity Estates, where we believe in igniting a passion for finding the perfect home through a carefully curated selection of properties for all needs and preferences. We are dedicated to helping every client find their ideal property match. Start the journey and connected with us.
               </p>
               <p className="text-lg text-gray-800 leading-relaxed mb-4">
-                <b>Located at:</b> Banai, Dhaka <br />
+                <b>Located at:</b> Banani, Dhaka <br />
               </p>
               <p className="flex gap-1 items-center justify-center mx-auto mb-6">
                 <NavLink to="/"></NavLink>
@@ -63,19 +63,25 @@ const About = () => {
         >
           <SwiperSlide>
             <img
-              src="https://i.postimg.cc/Y9TRNFpy/andrei-turca-pi-JGB1n-J1k-unsplash.jpg"
+              src="https://i.ibb.co/92fSWCq/sean-pollock-Ph-Yq704ffd-A-unsplash.jpg"
               className="w-full brightness-50 rounded-xl h-[35vh] md:h-[45vh] lg:h-[70vh]"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://i.postimg.cc/tCZMYmNk/bailey-anselme-Bkp3g-Lygye-A-unsplash.jpg"
+              src="https://i.ibb.co/YttkYVj/clay-banks-kiv1ggvkg-Qk-unsplash.jpg"
               className="w-full brightness-50 rounded-xl h-[35vh] md:h-[45vh] lg:h-[70vh]"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://i.postimg.cc/90Spp7Cn/gerardo-mr-p-Qr-Xgg-KVvz-I-unsplash.jpg"
+              src="https://i.ibb.co/6nLm0gp/vita-vilcina-Kt-Oid0-FLjq-U-unsplash.jpg"
+              className="w-full brightness-50 rounded-xl h-[35vh] md:h-[45vh] lg:h-[70vh]"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://i.ibb.co/Ny0V5D9/florian-schmidinger-b-79n-Oqf95-I-unsplash.jpg"
               className="w-full brightness-50 rounded-xl h-[35vh] md:h-[45vh] lg:h-[70vh]"
             />
           </SwiperSlide>

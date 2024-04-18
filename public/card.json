@@ -1,110 +1,110 @@
 [
     {
         "id": 1,
-        "estate_title": "Luxury Beachfront Villa",
+        "estate_title": "Townhouse Apartment",
         "segment_name": "Single family homes",
         "description": "Escape to paradise with this luxurious beachfront villa, offering stunning ocean views and private beach access.",
-        "price": "1,500",
-        "status": "sale",
-        "area": "5000 sq ft",
-        "location": "Malibu, California",
+        "price": "1200",
+        "status": "Sale",
+        "area": "2500 sqft",
+        "location": "Malibu, Canada",
         "facilities": ["Infinity pool", "Private beach access", "Outdoor kitchen"],
-        "image": "https://i.postimg.cc/6qXDtgD0/lotus-design-n-print-Alp8v3dp-Gh0-unsplash.jpg"
+        "image": "https://i.ibb.co/RCg3Tn4/analog-landscape-city-with-buildings.jpg"
     },
     {
         "id": 2,
         "estate_title": "Modern City Apartment",
         "segment_name": "Town Houses",
         "description": "Experience luxury city living in this modern apartment with panoramic views of the skyline.",
-        "price": "800",
-        "status": "sale",
-        "area": "1500 sq ft",
+        "price": "1600",
+        "status": "Rent",
+        "area": "1500 sqft",
         "location": "East, Washington",
         "facilities": ["Gym", "Concierge service", "Rooftop terrace"],
-        "image": "https://i.postimg.cc/wTSbpSLs/maria-krasnova-tm-TLfhk-WDLA-unsplash.jpg"
+        "image": "https://i.ibb.co/92fSWCq/sean-pollock-Ph-Yq704ffd-A-unsplash.jpg"
     },
     {
         "id": 3,
-        "estate_title": "Stylish Urban Loft",
+        "estate_title": "Stylish Urban Townhouse",
         "segment_name": "Apartments",
         "description": "Embrace urban living in this stylish loft located in the heart of the city, with trendy cafes and boutiques just steps away.",
-        "price": "700",
-        "status": "sale",
-        "area": "1800 sq ft",
+        "price": "1500",
+        "status": "Sale",
+        "area": "1800 sqft",
         "location": "SOMA, UAE",
         "facilities": ["Open floor plan", "Exposed brick walls", "City views"],
-        "image": "https://i.postimg.cc/KvNRSyd0/jan-jakub-nanista-UHyrj-KPsshk-unsplash.jpg"
+        "image": "https://i.ibb.co/7pVYp99/andrea-cau-n-V7-GJm-Sq3zc-unsplash.jpg"
     },
     {
         "id": 4,
         "estate_title": "Charming Suburban Home",
         "segment_name": "Student Housing",
         "description": "Ideal for families, this charming home is nestled in a peaceful suburban neighborhood, offering a safe and nurturing environment.",
-        "price": "600",
-        "status": "sale",
-        "area": "2500 sq ft",
+        "price": "1000",
+        "status": "Sale",
+        "area": "1200 sqft",
         "location": "Oak Park, Illinois",
         "facilities": ["Backyard garden", "Home office", "Fireplace"],
-        "image": "https://i.postimg.cc/nzY3YzP4/gabriel-beaudry-Wu-QME0-I-o-ZA-unsplash.jpg"
+        "image": "https://i.ibb.co/Ny0V5D9/florian-schmidinger-b-79n-Oqf95-I-unsplash.jpg"
     },
     {
         "id": 5,
-        "estate_title": "Luxury Cabin",
+        "estate_title": "Luxury Cabin Apartment",
         "segment_name": "Senior Living Communities",
         "description": "Retreat to the mountains in style with this luxurious cabin, designed for comfortable living with breathtaking views and modern amenities.",
-        "price": "2,000",
-        "status": "sale",
-        "area": "3000 sq ft",
+        "price": "2000",
+        "status": "Sale",
+        "area": "3000 sqft",
         "location": "Varda, Colombo",
         "facilities": ["Hot tub", "Home theater", "Ski-in/ski-out access"],
-        "image": "https://i.postimg.cc/0jxxNbLh/outsite-co-R-LK3sq-Li-Bw-unsplash.jpg"
+        "image": "https://i.ibb.co/M5GK4CL/clay-banks-Gn8-Dm-Q-6-F4-Y-unsplash.jpg"
     },
     {
         "id": 6,
-        "estate_title": "Majestic Riverside Mansion",
+        "estate_title": "Riverside Mansion Apartment",
         "segment_name": "Vacation Rentals",
         "description": "Experience grandeur and luxury in this majestic riverside mansion, perfect for an unforgettable vacation with family and friends.",
-        "price": "3,500",
-        "status": "sale",
-        "area": "7000 sq ft",
+        "price": "3600",
+        "status": "Rent",
+        "area": "4000 sqft",
         "location": "St. Helena, Dubai",
         "facilities": ["Wine cellar", "Tennis court", "Guest house"],
-        "image": "https://i.postimg.cc/90Spp7Cn/gerardo-mr-p-Qr-Xgg-KVvz-I-unsplash.jpg"
+        "image": "https://i.ibb.co/6nLm0gp/vita-vilcina-Kt-Oid0-FLjq-U-unsplash.jpg"
     },
     {
         "id": 7,
-        "estate_title": "Beautiful Historic Townhouse",
+        "estate_title": "Elegant City Apartment",
         "segment_name": "Historic Living",
         "description": "Step back in time and immerse yourself in the charm of yesteryears with this beautifully restored historic townhouse, offering a glimpse into the past with modern comforts.",
-        "price": "1,200",
-        "status": "sale",
-        "area": "3500 sq ft",
+        "price": "1400",
+        "status": "Sale",
+        "area": "3500 sqft",
         "location": "Historic, Nigeria",
         "facilities": ["Garden courtyard", "Original architectural details", "Wraparound porch"],
-        "image": "https://i.postimg.cc/tCZMYmNk/bailey-anselme-Bkp3g-Lygye-A-unsplash.jpg"
+        "image": "https://i.ibb.co/0r5tdQz/3d-rendering-loft-luxury-living-room-with-bookshelf-near-bookshelf.jpg"
     },
     {
         "id": 8,
-        "estate_title": "Cozy Lakefront Retreat",
+        "estate_title": "Rozy Forest Retreat",
         "segment_name": "Lake House",
         "description": "Indulge in serene lakeside living in this cozy retreat, offering breathtaking views of Lake Tahoe and the surrounding mountains.",
-        "price": "900",
-        "status": "sale",
-        "area": "2000 sq ft",
+        "price": "800",
+        "status": "Rent",
+        "area": "2000 sqft",
         "location": "Lake, California",
         "facilities": ["Boat dock", "Stone fireplace", "Wraparound deck"],
-        "image": "https://i.postimg.cc/C1bb3kGj/vincentiu-solomon-7-MH4ped6-Mo-unsplash.jpg"
+        "image": "https://i.ibb.co/YttkYVj/clay-banks-kiv1ggvkg-Qk-unsplash.jpg"
     },
     {
         "id": 9,
         "estate_title": "Sprawling Country Estate",
         "segment_name": "Country Living",
         "description": "Escape the hustle and bustle of city life to this sprawling estate nestled in the picturesque Cotswolds countryside, offering tranquility and luxury amidst nature.",
-        "price": "4,000",
-        "status": "sale",
-        "area": "10000 sq ft",
+        "price": "2000",
+        "status": "Sale",
+        "area": "6000 sqft",
         "location": "vally, England",
         "facilities": ["Orchard", "Stables", "Helipad"],
-        "image": "https://i.postimg.cc/Y9TRNFpy/andrei-turca-pi-JGB1n-J1k-unsplash.jpg"
+        "image": "https://i.ibb.co/bsDYBgs/josh-moore-Hx-Op82-CEkgc-unsplash.jpg"
     }
 ]

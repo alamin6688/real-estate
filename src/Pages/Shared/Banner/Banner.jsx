@@ -2,28 +2,28 @@ const Banner = () => {
   return (
     <div className="flex items-center justify-center relative">
       <div>
-        <div className="carousel w-full md:h-[550px] rounded-2xl mt-4 animate__animated animate__slideInDown shadow-xl">
+        <div className="carousel w-full md:h-[700px] rounded-2xl mt-4 animate__animated animate__slideInDown shadow-xl">
           <div id="item1" className="carousel-item w-full">
             <img
-              src="https://i.postimg.cc/0jxxNbLh/outsite-co-R-LK3sq-Li-Bw-unsplash.jpg"
+              src="https://i.ibb.co/92fSWCq/sean-pollock-Ph-Yq704ffd-A-unsplash.jpg"
               className="w-full"
             />
           </div>
           <div id="item2" className="carousel-item w-full">
             <img
-              src="https://i.postimg.cc/6qXDtgD0/lotus-design-n-print-Alp8v3dp-Gh0-unsplash.jpg"
+              src="https://i.ibb.co/YttkYVj/clay-banks-kiv1ggvkg-Qk-unsplash.jpg"
               className="w-full"
             />
           </div>
           <div id="item3" className="carousel-item w-full">
             <img
-              src="https://i.postimg.cc/tCZMYmNk/bailey-anselme-Bkp3g-Lygye-A-unsplash.jpg"
+              src="https://i.ibb.co/7pVYp99/andrea-cau-n-V7-GJm-Sq3zc-unsplash.jpg"
               className="w-full"
             />
           </div>
           <div id="item4" className="carousel-item w-full">
             <img
-              src="https://i.postimg.cc/KvNRSyd0/jan-jakub-nanista-UHyrj-KPsshk-unsplash.jpg"
+              src="https://i.ibb.co/RCg3Tn4/analog-landscape-city-with-buildings.jpg"
               className="w-full"
             />
           </div>
@@ -43,8 +43,8 @@ const Banner = () => {
           </a>
         </div>
       </div>
-      <div className="absolute bg-gray-200 bg-opacity-80 text-center w-3/4 md:w-[60%] rounded-2xl shadow-2xl animate__animated animate__fadeInUp">
-          <h2 className="text-xl md:text-3xl text-orange-500 mb-0">
+      <div className="absolute bg-gray-200 bg-opacity-90 text-center w-3/4 md:w-[60%] rounded-2xl shadow-2xl animate__animated animate__fadeInUp">
+          <h2 className="text-xl md:text-3xl text-orange-600 mb-0">
             Welcome to Unity Estates!
           </h2>
           <p className="w-full mx-auto text-black md:text-xl">
